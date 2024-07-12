@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main-color: #033a80;
+    --bg-color: rgb(209, 217, 235);
+    --text-color: #0f0c27;
+    --hover: hsl(260, 100%, 51%);
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+
+body.active {
+    --text-color: #fff;
+    --bg-color: #0f0c27;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+*::selection {
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+/* main */
+.header {
+    background-image: url("https://img.freepik.com/premium-photo/nocebo-effect-concept_798657-4507.jpg?size=626&ext=jpg&ga=GA1.1.1266505969.1707910349&semt=ais");
+    background-color: darkgray;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100% !important;
+    height: 500px;
+}
+
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 30px;
+}
+
+/* about*/
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.about-text{
+    padding: 70px;
+    margin: 30px;
+}
+.about-text p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    text-align: justify;
+    
+}
+
+.information {
+    margin: 1rem 0 1.4rem;
+}
+
+/* type */
+
+.types {
+    margin: 70px;
+    padding: 40px;
+    border: 2px solid;
+}
+
+.types-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.types-box {
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+}
+
+.types-box:hover {
+    background-color: #02225a;
+}
+
+.types-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
+}
+
+.types-box:hover h3 {
+    color: #fff;
+}
+.types-box:hover p {
+    color: #fff;
+}
+.types-box .bx {
+    padding-top: 2rem;
+    font-size: 54px;
+    color: var(--main-color);
+}
+
+.types-box:hover .bx {
+    color: #22cf91;
+}
+
+
+/* About */
+.about {
+    margin: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* contact */
+.btn-white {
+    background-color: #fff;
+    border-color: #e7eaf3;
+}
+
+.radius-15 {
+    border-radius: 15px;
+}
+
+.contacts-social a {
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: #ffffff;
+    border: 1px solid #eeecec;
+    text-align: center;
+    border-radius: 50%;
+    color: #2b2a2a;
+}
+
+.bg-info {
+    background-color: #cdd2b8 !important;
+}
+
+.bg-danger {
+    background-color: #cacae8 !important;
+}
+
+.bg-warning {
+    background-color: #b6d5ed !important;
+}
+
+.bg-grey {
+    background-color: #b0d3d4 !important;
+}
+
+.cta {
+    padding: 25px;
+    margin: 20px;
+}
+
+.col{
+ padding: 20px;
+}
+
+
+/*Contact section*/
+.contact{
+	width: 100%;
+}
+.contact footer{
+	width: 100%;
+	background-color: rgb(93, 117, 132);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contact footer .footerdivs{
+	width: 300px;
+	padding: 30px;
+}
+.contact footer .footerdivs h1{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Lobster';
+	margin-top: 30px;
+}
+.contact footer .footerdivs a{
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	display: block;
+	margin-top: 10px;
+}
+.contact footer .footerdivs a:hover{
+	color: darkblue;
+}
+.contact footer .footerdivs i{
+	color: #fff;
+	display: block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.contact footer .footerdivs i:hover{
+	color: darkblue;
+}
+
+.contact .copyright h2{
+	color: #303c4f;
+	font-size: 20px;
+    text-align:center;
+	padding-bottom: 30px;
+}
+
+
